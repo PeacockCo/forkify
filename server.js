@@ -11,4 +11,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'index.html'));
 });
 
-app.listen(port);
+server.listen(PORT, function () {
+  console.log('Chat serving running');
+});
